@@ -1,0 +1,39 @@
+<div class="content">
+  <div class="col-md-6 ">
+    <div class="card">
+      <div class="flex-wrap justify-content-center">
+      <div class="card-header text-center"><h5 class="title">Marka Güncelleme</h5></div>
+      <div class="card-body">
+        <form [formGroup]="brandUpdateForm">
+          <div class="form-group">
+           <div class="mb-3">
+                            <label for="brandId" style="display: none;" ><b>Marka Id</b></label>
+                            <input type="text" id="brandId" formControlName="brandId" class="form-control" [(ngModel)]="brandId" style="display: none;"/>
+                        </div>
+                        <div class="mb-3">
+                            <label for="brandName"><b>Marka Adı</b></label>
+                            <input type="text" id="brandName" formControlName="brandName" class="form-control" [(ngModel)]="brandName"/>
+                        </div>
+                        <div class="mb-3">
+                            <label for="model"><b>Model Adı</b></label>
+                            <input type="text" id="model" formControlName="model" class="form-control" [(ngModel)]="model"/>
+                        </div>
+          </div>
+           
+        </form>
+      </div>
+      </div>
+      <div class="card-footer">
+        <div>
+          <button (click)="update()" type="button" class="btn btn-primary">
+          Güncelle
+          </button>
+        </div>
+      </div>
+      
+      
+    </div>
+    
+  </div>
+  
+</div>

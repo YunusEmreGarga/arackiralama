@@ -1,0 +1,20 @@
+<app-navi></app-navi>
+   
+<div class="container">
+    <br />
+
+    <div class="row" >
+      <div *ngIf="isAuthenticated()" class="col-md-3">
+        <app-brand></app-brand>
+      <br>
+        <app-color></app-color>
+      </div>
+  
+      <div class="col-md-9">
+        
+  <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+
+  <app-footer></app-footer>
